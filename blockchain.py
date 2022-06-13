@@ -1,4 +1,4 @@
-#https://www.youtube.com/watch?v=G5M4bsxR-7E
+
 
 import datetime as _dt
 import hashlib as _hashlib
