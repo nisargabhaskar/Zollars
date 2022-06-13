@@ -33,7 +33,7 @@ How to Use?
 * Create a postgres docker container to act as a server database and run it 
 ```
 docker pull postgres:alpine
-docker run --name name_of_container -e POSTGRES_PASSWORD = blockchain -d -p 5432:5432 postgres:alpine
+docker run --name name_of_container -e POSTGRES_PASSWORD = password -d -p 5432:5432 postgres:alpine
 docker exec -it blockchain bash
 ```
 * Create a database in postgres and connect to it
@@ -51,3 +51,7 @@ source venv/bin/activate
 uvicorn main:app --reload
 ```
 * In your browser you can access the API's in http://localhost:8000/docs
+* Commit the changes made in database
+```
+docker commit container_id name_of_container
+```
